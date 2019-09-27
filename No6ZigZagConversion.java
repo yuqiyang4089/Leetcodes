@@ -24,7 +24,7 @@ class Solution {
           for(int i = 0; i<numRows && point < len;i++){
             sb[i].append(c[point++]);
           }
-          for(int i = numRows-1; i>=0 && point <len;i--){
+          for(int i = numRows-2; i>=1 && point <len;i--){  // opposite way back to store should be -2!!!,and till i=1 rather than 0 should stop!!! 
             sb[i].append(c[point++]);
           }
         }
